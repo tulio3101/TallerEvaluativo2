@@ -15,7 +15,7 @@
 ![alt text](docs/imagenes/componentesGeneral.png)
 
 *Diagrama De Componentes General Especifico:*
-![alt text](docs/imagenes/componentesEspecifico.png)
+![alt text](docs/imagenes/componetesEspecifico.png)
 
 *Diagrama De Clases:*
 
@@ -24,4 +24,4 @@
 2. **Codificaciòn**
 
 
----
+---s
