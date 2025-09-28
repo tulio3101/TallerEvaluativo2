@@ -18,6 +18,6 @@ public class Report {
     private String title;
     private LocalDateTime generationDate;
     private String autor;
-    private Transaction transaction;
-    private String description;
+    private List<String> transaction;
+    private String content;
 }

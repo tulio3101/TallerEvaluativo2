@@ -3,8 +3,6 @@ package com.dosw.TallerEvaluativo2.dto.request;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import com.dosw.TallerEvaluativo2.model.Transaction;
-
 import lombok.Builder;
 import lombok.Data;
 
@@ -16,7 +14,7 @@ public class ReportRequestDTO {
     private String title;
     private LocalDateTime generationDate;
     private String autor;
-    private TransactionRequestDTO transaction;
-    private String description;
+    private List<String> transaction;
+    private String content;
 
 }
