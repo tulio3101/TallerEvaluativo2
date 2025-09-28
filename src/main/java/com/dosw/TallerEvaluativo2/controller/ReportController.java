@@ -4,11 +4,8 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,8 +14,8 @@ import com.dosw.TallerEvaluativo2.dto.response.ReportResponseDTO;
 
 import com.dosw.TallerEvaluativo2.service.ReportService;
 
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
-import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.RequestBody;
+
 import lombok.RequiredArgsConstructor;
 
 /**
@@ -40,6 +37,8 @@ public class ReportController {
     @PostMapping("")
     public ResponseEntity<ReportResponseDTO> createReport(@RequestBody ReportRequestDTO report) {
 
+        System.out.println(report);
+
         ReportResponseDTO created = reportService.createReport(report);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
@@ -50,7 +49,7 @@ public class ReportController {
      *
      * @return list of reports
      */
-    @GetMapping("/reports/allReports")
+    @GetMapping("/allReports")
     public ResponseEntity<List<ReportResponseDTO>> getAllReports() {
 
         List<ReportResponseDTO> reports = reportService.listAll();
