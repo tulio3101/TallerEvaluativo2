@@ -2,6 +2,7 @@ package com.dosw.TallerEvaluativo2.service.impl;
 
 import org.apache.el.stream.Optional;
 import org.bson.types.ObjectId;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.dosw.TallerEvaluativo2.dto.request.ReportRequestDTO;
@@ -20,6 +21,7 @@ import lombok.RequiredArgsConstructor;
  * reports.
  */
 @Service
+@Primary
 @RequiredArgsConstructor
 public class ReportServiceImpl implements IReportService {
 

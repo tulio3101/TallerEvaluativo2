@@ -9,15 +9,16 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.logging.Logger;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("PDFExcelDecorator")
 @Slf4j
 public class PDFExcelDecorator extends ReportServiceDecorator {
 
     private static final Logger logger = Logger.getLogger(PDFExcelDecorator.class.getName());
 
-    public PDFExcelDecorator(IReportService interfaceReport) {
+    public PDFExcelDecorator(@Qualifier("ReportServiceDecorator") IReportService interfaceReport) {
         super(interfaceReport);
         logger.info("Report with Excel created");
     }

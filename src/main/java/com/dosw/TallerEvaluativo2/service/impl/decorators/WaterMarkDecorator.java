@@ -8,14 +8,15 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.logging.Logger;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("WaterMarkDecorator")
 @Slf4j
 public class WaterMarkDecorator extends ReportServiceDecorator {
     private static final Logger logger = Logger.getLogger(StadisticDecorator.class.getName());
 
-    public WaterMarkDecorator(ReportServiceDecorator interfaceReport) {
+    public WaterMarkDecorator(@Qualifier("ReportServiceDecorator") ReportServiceDecorator interfaceReport) {
         super(interfaceReport);
         logger.info("Report with WaterMark created");
     }
