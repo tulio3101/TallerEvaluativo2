@@ -3,20 +3,21 @@ package com.dosw.TallerEvaluativo2.model;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Builder;
 import lombok.Data;
 
-@Document(collection = "reportes")
+@Document(collection = "reports")
 @Data
 @Builder
-public class Reporte{
-    @Id 
+public class Report {
+    @Id
     private String id;
-    private String titulo;
-    private LocalDateTime fechaDeGeneracion;
+    private String title;
+    private LocalDateTime generationDate;
     private String autor;
-    private List<Transaccion> transacciones;
-    private String descripcion;
+    private Transaction transaction;
+    private String description;
 }
