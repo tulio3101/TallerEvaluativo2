@@ -47,7 +47,7 @@ public class ReportService {
                 .title(dto.getTitle())
                 .generationDate(dto.getGenerationDate())
                 .autor(dto.getAutor())
-                .transaction(new ArrayList<>())
+                .transaction(dto.getTransaction())
                 .content(dto.getContent())
                 .build();
 
@@ -59,7 +59,7 @@ public class ReportService {
                 .title(saved.getTitle())
                 .generationDate(saved.getGenerationDate())
                 .autor(saved.getAutor())
-                .transaction(dto.getTransaction())
+                .transaction(saved.getTransaction())
                 .content(saved.getContent())
                 .build();
 
