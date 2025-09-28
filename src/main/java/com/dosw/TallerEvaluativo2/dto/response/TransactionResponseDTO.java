@@ -10,7 +10,7 @@ import lombok.Data;
 public class TransactionResponseDTO {
 
     private String author;
-    private Double amount;
+    private double amount;
     private String description;
     private LocalDateTime generationTime;
 

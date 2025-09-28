@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dosw.TallerEvaluativo2.dto.request.ReportRequestDTO;
 import com.dosw.TallerEvaluativo2.dto.response.ReportResponseDTO;
 
-import com.dosw.TallerEvaluativo2.service.ReportService;
+import com.dosw.TallerEvaluativo2.service.IReportService;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import jakarta.validation.Valid;
@@ -23,7 +23,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ReportController {
 
-    private final ReportService reportService;
+    private final IReportService reportService;
 
     @PostMapping("")
     public ResponseEntity<ReportResponseDTO> createReport(@RequestBody ReportRequestDTO report) {
@@ -39,7 +39,7 @@ public class ReportController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/reports/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<ReportResponseDTO> updateReport(@PathVariable String id,
             @Valid @RequestBody ReportRequestDTO request) {
 

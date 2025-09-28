@@ -11,10 +11,12 @@ import lombok.Data;
 @Data
 @Builder
 public class ReportRequestDTO {
+
     private String id;
     private String title;
     private LocalDateTime generationDate;
     private String autor;
     private TransactionRequestDTO transaction;
     private String description;
+
 }

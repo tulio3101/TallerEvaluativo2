@@ -8,8 +8,8 @@ import java.time.LocalDateTime;
 @Builder
 public class TransactionRequestDTO {
     private String id;
-    private String title;
-    private LocalDateTime generationDate;
-    private String autor;
+    private String author;
+    private double amount;
     private String description;
+    private LocalDateTime generationTime;
 }
