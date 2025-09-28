@@ -9,16 +9,15 @@ import com.dosw.TallerEvaluativo2.dto.request.ReportRequestDTO;
 import com.dosw.TallerEvaluativo2.service.IReportService;
 import java.util.logging.Logger;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-@Service("GraphicDecorator")
+@Service
 @Slf4j
 public class GraphicDecorator extends ReportServiceDecorator {
 
     private static final Logger logger = Logger.getLogger(GraphicDecorator.class.getName());
 
-    public GraphicDecorator(@Qualifier("ReportServiceDecorator")IReportService interfaceReport) {
+    public GraphicDecorator(IReportService interfaceReport) {
         super(interfaceReport);
         logger.info("Report with graphics created");
     }

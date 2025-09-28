@@ -7,11 +7,11 @@ import com.dosw.TallerEvaluativo2.dto.request.ReportRequestDTO;
 import com.dosw.TallerEvaluativo2.dto.response.ReportResponseDTO;
 import com.dosw.TallerEvaluativo2.service.IReportService;
 
-@Service("ReportServiceDecorator")
+@Service
 public abstract class ReportServiceDecorator implements IReportService {
     protected IReportService interfaceReport;
 
-    public ReportServiceDecorator(@Qualifier("ReportServiceImpl")IReportService interfaceReport) {
+    public ReportServiceDecorator(IReportService interfaceReport) {
         this.interfaceReport = interfaceReport;
     }
 

@@ -13,12 +13,12 @@ import org.springframework.stereotype.Service;
 import com.dosw.TallerEvaluativo2.dto.request.ReportRequestDTO;
 import com.dosw.TallerEvaluativo2.dto.response.ReportResponseDTO;
 
-@Service("StadisticDecorator")
+@Service
 @Slf4j
 public class StadisticDecorator extends ReportServiceDecorator {
     private static final Logger logger = Logger.getLogger(StadisticDecorator.class.getName());
 
-    public StadisticDecorator(@Qualifier("ReportServiceDecorator")IReportService interfaceReport) {
+    public StadisticDecorator(IReportService interfaceReport) {
         super(interfaceReport);
         logger.info("Report with Stadistics created");
     }

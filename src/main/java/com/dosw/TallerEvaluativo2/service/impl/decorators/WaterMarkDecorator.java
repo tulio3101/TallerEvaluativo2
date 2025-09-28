@@ -11,12 +11,12 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-@Service("WaterMarkDecorator")
+@Service
 @Slf4j
 public class WaterMarkDecorator extends ReportServiceDecorator {
     private static final Logger logger = Logger.getLogger(StadisticDecorator.class.getName());
 
-    public WaterMarkDecorator(@Qualifier("ReportServiceDecorator") ReportServiceDecorator interfaceReport) {
+    public WaterMarkDecorator(ReportServiceDecorator interfaceReport) {
         super(interfaceReport);
         logger.info("Report with WaterMark created");
     }
