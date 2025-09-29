@@ -7,6 +7,9 @@ import com.dosw.TallerEvaluativo2.model.Report;
 
 import java.util.List;
 
+/**
+ * Mapper for converting between Report entities and DTOs.
+ */
 @Mapper(componentModel = "spring")
 public interface ReportMapper {
     List<ReportResponseDTO> toDtoList(List<Report> dto);
