@@ -38,4 +38,5 @@ public class ReportResponseDTO {
 
     @Schema(description = "Content of the report", example = "This report contains the financial transactions for the month...")
     private String content;
+
 }
