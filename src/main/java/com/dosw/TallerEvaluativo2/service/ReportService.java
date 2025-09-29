@@ -65,6 +65,12 @@ public class ReportService {
 
     }
 
+    /**
+     * Retrieves all reports from the database and maps them to DTOs.
+     *
+     * @return list of report DTOs.
+     */
+
     public List<ReportResponseDTO> listAll() {
         List<Report> reports = reportRepository.findAll();
         return reportMapper.toDtoList(reports);

@@ -11,7 +11,6 @@ import com.dosw.TallerEvaluativo2.model.Report;
  * Implements the ReportInterface and provides basic functionality
  * for creating reports.
  */
-
 public class ReportBase implements ReportInterface {
 
     private static final Logger logger = Logger.getLogger(ReportBase.class.getName());

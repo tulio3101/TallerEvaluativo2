@@ -11,6 +11,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Represents a report document.
+ */
 @Document(collection = "reports")
 @Data
 @Builder

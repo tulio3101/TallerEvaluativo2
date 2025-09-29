@@ -7,8 +7,6 @@ import java.util.logging.Logger;
 
 /**
  * Concrete decorator that adds graphics to a report.
- * Extends the functionality of a decorated report by including additional
- * behavior for adding graphics, following the Decorator pattern.
  */
 public class GraphicReport extends ReportDecorator {
 

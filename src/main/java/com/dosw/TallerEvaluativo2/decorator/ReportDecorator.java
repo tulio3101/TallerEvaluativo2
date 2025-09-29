@@ -3,8 +3,8 @@ package com.dosw.TallerEvaluativo2.decorator;
 
 /**
  * Abstract class that serves as a base for report decorators.
- * Implements the `ReportInterface` and allows extending the functionality
- * of report generation by decorating an existing `ReportInterface` instance.
+ * Implements the ReportInterface and allows extending the functionality
+ * of report generation by decorating an existing ReportInterface instance.
  */
 public abstract class ReportDecorator implements ReportInterface {
 
@@ -12,9 +12,9 @@ public abstract class ReportDecorator implements ReportInterface {
 
 
     /**
-     * Constructor for the `ReportDecorator` class.
+     * Constructor for the 'ReportDecorator' class.
      *
-     * @param decoratedReport The `ReportInterface` instance to be decorated.
+     * @param decoratedReport The 'ReportInterface' instance to be decorated.
      */
     public ReportDecorator(ReportInterface decoratedReport) {
         this.decoratedReport = decoratedReport;
