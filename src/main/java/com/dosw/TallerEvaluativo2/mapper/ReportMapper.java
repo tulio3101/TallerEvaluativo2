@@ -13,4 +13,6 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface ReportMapper {
     List<ReportResponseDTO> toDtoList(List<Report> dto);
+
+    ReportResponseDTO toDto(Report report);
 }
