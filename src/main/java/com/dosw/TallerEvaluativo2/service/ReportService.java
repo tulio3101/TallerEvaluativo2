@@ -43,7 +43,7 @@ public class ReportService {
                 .title(dto.getTitle())
                 .generationDate(dto.getGenerationDate())
                 .autor(dto.getAutor())
-                .transaction(new ArrayList<>())
+                .transaction(dto.getTransaction())
                 .content(dto.getContent())
                 .build();
 
@@ -55,11 +55,17 @@ public class ReportService {
                 .title(saved.getTitle())
                 .generationDate(saved.getGenerationDate())
                 .autor(saved.getAutor())
-                .transaction(dto.getTransaction())
+                .transaction(saved.getTransaction())
                 .content(saved.getContent())
                 .build();
 
     }
+
+    /**
+     * Retrieves all reports from the database and maps them to DTOs.
+     *
+     * @return list of report DTOs.
+     */
 
     public List<ReportResponseDTO> listAll() {
         List<Report> reports = reportRepository.findAll();

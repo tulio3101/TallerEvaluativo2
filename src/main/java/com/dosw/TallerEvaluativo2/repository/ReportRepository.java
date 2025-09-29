@@ -6,6 +6,9 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.dosw.TallerEvaluativo2.model.Report;
 
+/**
+ * Repository interface for managing Reports.
+ */
 public interface ReportRepository extends MongoRepository<Report, String> {
 
     /**
