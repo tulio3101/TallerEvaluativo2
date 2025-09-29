@@ -19,4 +19,5 @@ public class ReportResponseDTO {
     private String autor;
     private List<String> transaction;
     private String content;
+
 }
