@@ -3,9 +3,6 @@ package com.dosw.TallerEvaluativo2.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.el.stream.Optional;
-import org.bson.types.ObjectId;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,7 +10,6 @@ import com.dosw.TallerEvaluativo2.decorator.ReportBase;
 import com.dosw.TallerEvaluativo2.decorator.ReportInterface;
 import com.dosw.TallerEvaluativo2.dto.request.ReportRequestDTO;
 import com.dosw.TallerEvaluativo2.dto.response.ReportResponseDTO;
-import com.dosw.TallerEvaluativo2.exception.ResourceNotFoundException;
 import com.dosw.TallerEvaluativo2.mapper.ReportMapper;
 import com.dosw.TallerEvaluativo2.model.Report;
 import com.dosw.TallerEvaluativo2.repository.ReportRepository;
