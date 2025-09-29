@@ -62,35 +62,22 @@
             <artifactId>jakarta.validation-api</artifactId>
         </dependency>
 
-
         <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-            <version>1.6.3</version>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
         </dependency>
-
-		     <dependency>
-			       <groupId>io.swagger.core.v3</groupId>
-			      <artifactId>swagger-annotations</artifactId>
-			      <version>2.2.4</version>
-		    </dependency>
-
-		    <dependency>
-    		    <groupId>com.h2database</groupId>
-    		    <artifactId>h2</artifactId>
-    		    <scope>test</scope>
-		    </dependency>
 
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
-			<version>1.5.5.Final</version>
+			<version>1.6.3</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct-processor</artifactId>
-			<version>1.5.5.Final</version>
+			<version>1.6.3</version>
 			<scope>provided</scope>
 		</dependency>
 
