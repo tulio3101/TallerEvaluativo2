@@ -49,6 +49,10 @@ public class ReportService {
 
         ReportInterface reportC = new ReportBase(report);
 
+        ReportInterface reportDeco = new ReportDecorator(reportC);
+
+        reportDeco.generateReport();
+
         Report saved = reportRepository.save(report);
 
         return ReportResponseDTO.builder()
