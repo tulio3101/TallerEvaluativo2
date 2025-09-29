@@ -150,7 +150,7 @@
 								<exclude>**/mapper/*</exclude>
 								<exclude>**/exception/*</exclude>
 								<exclude>**/common/*</exclude>
-                                <exclude>**/TheBoysApplication.class</exclude>
+                                <exclude>**/TallerEvaluativo2Application.class</exclude>
                                 <exclude>**/decorator/**</exclude>
                             </excludes>
                         </configuration>
@@ -187,7 +187,7 @@
 								<exclude>**/mapper/*</exclude>
 								<exclude>**/exception/*</exclude>
 								<exclude>**/common/*</exclude>
-                                <exclude>**/TheBoysApplication.class</exclude>
+                                <exclude>**/TallerEvaluativo2Application.class</exclude>
                                 <exclude>**/decorator/**</exclude>
                             </excludes>
                         </configuration>

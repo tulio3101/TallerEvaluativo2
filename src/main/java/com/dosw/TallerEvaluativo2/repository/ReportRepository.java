@@ -1,5 +1,7 @@
 package com.dosw.TallerEvaluativo2.repository;
 
+import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -20,4 +22,7 @@ public interface ReportRepository extends MongoRepository<Report, String> {
      */
     Optional<Report> findById(String id);
 
+    List<Report> findByGenerationDate(LocalDateTime generationDate);
+
+    Optional<Report> findByAutor(String autor);
 }

@@ -58,9 +58,13 @@
 
 ![alt text](docs/imagenes/controlador.png)
 
+![alt text](docs/imagenes/ControladorCompleto.png)
+
 - Para hacer uso de la persistencia mediante MongoDB, hacemos uso de las anotaciones `@Document` de igual forma se emplea un `repositorio` donde se van a generar las respectivas consultas y se van a guardar los datos.
 
 ![alt text](docs/imagenes/reportModel.png)
+
+![alt text](docs/imagenes/OtrosMetodos.png)
 
 ---
 

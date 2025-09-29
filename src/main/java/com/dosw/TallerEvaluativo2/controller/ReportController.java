@@ -1,20 +1,20 @@
 package com.dosw.TallerEvaluativo2.controller;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dosw.TallerEvaluativo2.dto.request.ReportRequestDTO;
 import com.dosw.TallerEvaluativo2.dto.response.ReportResponseDTO;
-
 import com.dosw.TallerEvaluativo2.service.ReportService;
-
-import org.springframework.web.bind.annotation.RequestBody;
 
 import lombok.RequiredArgsConstructor;
 
@@ -53,6 +53,28 @@ public class ReportController {
     public ResponseEntity<List<ReportResponseDTO>> getAllReports() {
 
         List<ReportResponseDTO> reports = reportService.listAll();
+
+        return ResponseEntity.ok(reports);
+    }
+    /**
+     * Retrieves reports by autor.
+     *
+     * @return list of reports
+     */
+    @GetMapping("{autor}")
+    public ResponseEntity<ReportResponseDTO> getByAutor(@PathVariable String autor){
+        ReportResponseDTO report = reportService.reportByAutor(autor);
+
+        return ResponseEntity.ok(report);
+    }
+    /**
+     * Retrieves all reports by generation date.
+     *
+     * @return list of reports
+     */
+    @GetMapping("{generationDate}")
+    public ResponseEntity<List<ReportResponseDTO>> getByGenerationDate(@PathVariable LocalDateTime generationDate){
+        List<ReportResponseDTO> reports = reportService.reportByGenerationDate(generationDate);
 
         return ResponseEntity.ok(reports);
     }
