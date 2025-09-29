@@ -1,6 +1,6 @@
 # Taller Evaluativo – Corte 2
 
-## Integrantes
+## 🫂 Integrantes
 
 - Juan Sebastián Puentes Julio
 - Daniel Patiño Mejía
@@ -10,7 +10,7 @@
 
 ---
 
-## Descripción del enunciado
+## 📖 Descripción del enunciado
 
 - Una empresa fintech quiere desarrollar un `Sistema de Reportes Financieros` que permita generar informes dinámicos y personalizables para sus clientes.
 
@@ -34,7 +34,7 @@
 
 ---
 
-## 1. Diseño
+## 🎨1. Diseño
 
 ### 📌 Diagrama de Componentes Específico
 
@@ -48,11 +48,11 @@
 
 ---
 
-## 2. Descripción de como la solución sigue los principios SOLID
-
+## 🥸 2. Descripción de como la solución sigue los principios SOLID
+- La solucion sigue los principios SOLID mediante la implementacion de interfaces con el principio de segregacion de interfaces que en nuestro caso los clientes solo conocen los metodos que necesitan como el generar reporte en los decoradores y demas, como este cumple este principio tambien cumple el single resposability y demas principios, en cuanto a el principio open closed asegura la extension en cuanto a las formas de generar reportes y cerrado a la modificacion porque el reporte seguira siendo el mismo
 ---
 
-## 3. Implementación en código con SpringBoot y Mongo DB:
+##  💻3. Implementación en código con SpringBoot y Mongo DB:
 
 - El controlador mediante sus anotaciones va a poder crear nuevos documentos y así mismo obtenerlos todos.
 
@@ -64,19 +64,23 @@
 
 ---
 
-## 4. **Swagger**
+## 4. **Swagger** ✅
+![alt text](docs/imagenes/swagger.png)
 
 ---
+## 5. **SonarQube** ✅
+![alt text](docs/imagenes/sonar.png)
 
-## 5. **MongoDB**
+---
+## 6. **MongoDB** ✅
 
 - Utilizando PostMan, podemos implementar peticiones Rest para generar tanto los reportes, como obtenerlo respectivamente.
 
-## Petición Post:
+## ✍️ Petición Post:
 
 ![alt text](docs/imagenes/PostMan.png)
 
-## Petición Get:
+## ✍️ Petición Get:
 
 ![alt text](docs/imagenes/MongoGet.png)
 
